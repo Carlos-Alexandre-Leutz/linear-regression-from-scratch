@@ -28,22 +28,12 @@
     <label>Number of Rooms:</label>
     <input type="number" id="inputQuartos" placeholder="e.g. 2">
 
-    <button onclick="prever()">Calculate Price</button>
+    <button onclick="predict()">Calculate Price</button>
 
     <div id="resultado">Enter the details above</div>
 </div>
 
-<script src="./pure_regression.js"></script>
-
-<script>
-    window.onload = () => {
-        document.getElementById('paramsDisplay').innerHTML =
-            `<strong>Model Parameters (Calculated):</strong><br>` +
-            `w1 (Square Footage): ${w1.toFixed(2)}<br>` +
-            `w2 (Rooms): ${w2.toFixed(2)}<br>` +
-            `b (Bias/Intercept): ${b.toFixed(2)}`;
-    };
-</script>
+<script src="regressao_pura.js"></script>
 
 </body>
 </html>
