@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate Price Predictor</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f9; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 350px; }
+        h2 { margin-top: 0; color: #333; font-size: 1.4em; text-align: center; }
+        .params { background: #f8f9fa; padding: 10px; border-radius: 6px; font-size: 0.85em; color: #555; border: 1px solid #eee; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #007acc; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        #resultado { margin-top: 20px; padding: 15px; background: #eef; border-radius: 6px; font-size: 1.1em; color: #005a9c; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Property Price Simulator</h2>
+
+    <div class="params" id="paramsDisplay">
+        Loading model parameters...
+    </div>
+
+    <label>Square Footage (m²):</label>
+    <input type="number" id="inputMetros" placeholder="e.g. 50">
+
+    <label>Number of Rooms:</label>
+    <input type="number" id="inputQuartos" placeholder="e.g. 2">
+
+    <button onclick="prever()">Calculate Price</button>
+
+    <div id="resultado">Enter the details above</div>
+</div>
+
+<script src="./pure_regression.js"></script>
+
+<script>
+    window.onload = () => {
+        document.getElementById('paramsDisplay').innerHTML =
+            `<strong>Model Parameters (Calculated):</strong><br>` +
+            `w1 (Square Footage): ${w1.toFixed(2)}<br>` +
+            `w2 (Rooms): ${w2.toFixed(2)}<br>` +
+            `b (Bias/Intercept): ${b.toFixed(2)}`;
+    };
+</script>
+
+</body>
+</html>
