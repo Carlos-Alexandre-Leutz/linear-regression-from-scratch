@@ -8,7 +8,7 @@ The main goal is to demonstrate a deep understanding of the mathematical foundat
 
 ## 🚀 Live Demo
 You can test the algorithm and interact with the model in real-time here:
-**[[https://SEU_USUARIO.github.io/NOME-DO-REPOSITORIO/](https://carlos-alexandre-leutz.github.io/linear-regression-from-scratch/)]([https://SEU_USUARIO.github.io/NOME-DO-REPOSITORIO/](https://carlos-alexandre-leutz.github.io/linear-regression-from-scratch/))**
+**[[https://carlos-alexandre-leutz.github.io/linear-regression-from-scratch/](https://carlos-alexandre-leutz.github.io/linear-regression-from-scratch/)]**
 
 ---
 
